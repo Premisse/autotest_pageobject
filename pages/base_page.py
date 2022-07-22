@@ -1,5 +1,8 @@
-class Basepage():
-    def __init__(self, url, browser):
+
+
+class BasePage():
+
+    def __init__(self, browser, url):
         self.browser = browser
         self.url = url
 
