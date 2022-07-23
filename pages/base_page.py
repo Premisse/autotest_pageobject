@@ -16,3 +16,10 @@ class BasePage():
         except (NoSuchElementException):
             return False
         return True
+
+    def current_url(self):
+        try:
+            self.browser.current_url(self.url)
+        except (NoSuchElementException):
+            return False
+        return True
