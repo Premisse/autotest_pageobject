@@ -54,6 +54,7 @@ def test_product_info_is_the_same(browser, promo_offer):
     page.solve_quiz_and_get_code()
     page.product_info_should_be_the_same()
 
+@pytest.mark.xfail
 def test_guest_cant_see_success_message_after_adding_product_to_basket(browser):
     link = "http://selenium1py.pythonanywhere.com/catalogue/the-shellcoders-handbook_209"
     page = ProductPage(browser, link)
@@ -67,6 +68,7 @@ def test_guest_cant_see_success_message(browser):
     page.open()
     page.should_not_be_success_message()
 
+@pytest.mark.xfail
 def test_message_disappeared_after_adding_product_to_basket(browser):
     link = "http://selenium1py.pythonanywhere.com/catalogue/the-shellcoders-handbook_209"
     page = ProductPage(browser, link)
