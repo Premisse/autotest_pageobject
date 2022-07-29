@@ -30,6 +30,7 @@ class TestUserAddToBasketFromProductPage():
         page.click_add_to_cart()
         page.solve_quiz_and_get_code()
 
+
 def test_guest_see_add_to_cart_message(browser):
     link = "http://selenium1py.pythonanywhere.com/catalogue/the-shellcoders-handbook_209/?promo=newYear"
     page = ProductPage(browser, link)
